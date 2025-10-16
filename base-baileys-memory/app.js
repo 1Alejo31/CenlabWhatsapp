@@ -183,7 +183,7 @@ ${seccion_recomendaciones}
 
             if (!isProcessing) break;
 
-            console.log(`✅ WhatsApp enviado a ${numero} (intentos: img=${resultadoImagen.intento}, txt=${resultadoTexto.intento}, pdf=${resultadoPDF.intento})`);
+            console.log(`✅ WhatsApp enviado a ${numero} (intentos: txt=${resultadoTexto.intento})`);
             whatsappEnviados++;
           } catch (error) {
             console.error(`❌ Error general al enviar WhatsApp a ${numero}:`, error);
