@@ -1,10 +1,10 @@
 const mysql = require('mysql2/promise');
 
 const dbConfig = {
-    host: '3.128.91.180',
-    user: 'GestorRpaPro',
-    password: 'RpaGestor2025.*',
-    database: 'db_general'
+    host: '3.14.252.156',
+    user: 'root',
+    password: '',
+    database: 'DB_GENERAL'
 };
 
 const pool = mysql.createPool(dbConfig);

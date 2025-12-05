@@ -20,7 +20,7 @@ async function buscarTelefonos() {
         FROM
         db_general.tbl_gestor_mensaje
         WHERE
-        GS_USUARIO_CREACION = '1'
+        GS_USUARIO_CREACION = '2'
         AND GS_DETALLE = 'PUBLICIDAD-E'
         AND GS_ESTATUS = 'SIN GESTION'
         ORDER BY GS_CODIGO ASC
