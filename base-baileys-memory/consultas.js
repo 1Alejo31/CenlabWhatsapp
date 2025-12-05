@@ -18,7 +18,7 @@ async function buscarTelefonos() {
         GS_DETALLE13 AS CIUDAD,
         GS_DETALLE14 AS LUGAR
         FROM
-        db_general.tbl_gestor_mensaje
+        DB_GENERAL.TBL_GESTOR_MENSAJE
         WHERE
         GS_USUARIO_CREACION = '2'
         AND GS_DETALLE = 'PUBLICIDAD-E'
@@ -35,7 +35,7 @@ async function buscarTelefonos() {
 }
 
 async function updateStatus(id, estatus, detalle) {
-    const sql = 'UPDATE db_general.tbl_gestor_mensaje SET GS_ESTATUS = ?, GS_DETALLE16 = ? WHERE GS_CODIGO = ?';
+    const sql = 'UPDATE DB_GENERAL.TBL_GESTOR_MENSAJE SET GS_ESTATUS = ?, GS_DETALLE16 = ? WHERE GS_CODIGO = ?';
     try {
         const resultados = await query(sql, [estatus, detalle, id]);
         return resultados;
